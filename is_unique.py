@@ -4,10 +4,14 @@
 # are any two identical values at different indexes of
 # the array.
 def is_unique(a):
-  pass
+  for i in range(0, len(a)-1):
+      for j in range(i+1, len(a)):
+          if a[i] == a[j]:
+              return False
+  return True
 
 if is_unique([2,2,3]):
-  print("yup.")
+  print("[2,2,3] yup.")
 
 if is_unique([1,2,3]):
-  print("yup.")
+  print("[1,2,3] yup.")

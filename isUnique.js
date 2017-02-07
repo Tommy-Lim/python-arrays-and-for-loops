@@ -17,9 +17,9 @@ function isUnique(a) {
 }
 
 if(isUnique([2,2,3])) {
-  console.log("yup.");
+  console.log("[2,2,3] yup.");
 }
 
 if(isUnique([1,2,3])) {
-  console.log("yup.");
+  console.log("[1,2,3] yup.");
 }
